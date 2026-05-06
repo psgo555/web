@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>購物車</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/cart.css">
+</head>
+
+<body>
+  <!-- 購物車 -->
+  <div class="cart-page">
+    <div class="wrapper">
+      <!-- 購物車清單 -->
+      <div class="cart-list">
+        <div class="cart-row cart-header">
+          <div>商品</div>
+          <div>單價</div>
+          <div>數量</div>
+          <div>小計</div>
+          <div>操作</div>
+        </div>
+        <!-- 單行項目 -->
+        <div class="cart-row">
+          <div class="cart-product">
+            <img src="../uploads/goods1.png" alt="">
+            <span>商品名稱</span>
+          </div>
+          <div class="cart-price">$849</div>
+          <div class="cart-qty">
+            <button class="qty-minus">-</button>
+            <span class="qty-num">1</span>
+            <button class="qty-plus">+</button>
+          </div>
+          <div class="cart-subtotal">$849</div>
+          <div><button class="cart-remove">刪除</button></div>
+        </div>
+      </div>
+
+      <!-- 頁尾:總計+結帳 -->
+      <div class="cart-footer">
+        <div class="cart-total">總計：$849</div>
+        <button class="cart-checkout">結帳</button>
+        <button class="cart-clear">清空購物車</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 底部 -->
+  <div class="pay-section">
+    <h4>付款方式</h4>
+    <ul class="pay-list">
+      <li><img src="../cart-img/visa.png" alt="VISA"></li>
+      <li><img src="../cart-img/jcb.png" alt="JCB"></li>
+      <li><img src="../cart-img/mastercard.png" alt="MasterCard"></li>
+      <li><img src="../cart-img/linepay.png" alt="LinePay"></li>
+      <li><img src="../cart-img/applepay.png" alt="ApplePay"></li>
+      <li><img src="../cart-img/Google_Pay.webp" alt="GooglePay"></li>
+    </ul>
+    <!-- 物流 -->
+    <div class="ship-section">
+      <h4>合作物流</h4>
+      <ul class="ship-list">
+        <li><img src="../cart-img/711.jpg" alt="7‑ELEVEN"></li>
+        <li><img src="../cart-img/FamilyMart.png" alt="FamilyMart"></li>
+        <li><img src="../cart-img/OK_Mart.png" alt="OK"></li>
+        <li><img src="../cart-img/HI-Life.png" alt="HI-Life"></li>
+        <li><img src="../cart-img/新竹物流.jpg" alt="新竹物流"></li>
+        <li><img src="../cart-img/BlackCat.jpg" alt="新竹物流"></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <script src="../JavaScript/cart.js"></script>
+
+</body>
+
+</html>

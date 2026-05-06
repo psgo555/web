@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>新增商品</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <style>
+    body { background: #f7f7f7; }
+    .form-wrap { max-width: 520px; margin: 40px auto; padding: 24px; background: #fff; border: 1px solid #eee; }
+    .form-wrap h2 { margin-bottom: 16px; font-size: 20px; }
+    .field { margin-bottom: 12px; }
+    .field label { display: block; margin-bottom: 6px; }
+    .field input { width: 100%; padding: 8px 10px; border: 1px solid #ccc; }
+    .actions { margin-top: 16px; }
+    .actions button { padding: 8px 14px; border: 0; background: #27ba9b; color: #fff; cursor: pointer; }
+    .hint { margin-top: 10px; color: #666; font-size: 12px; }
+  </style>
+</head>
+
+<body>
+  <div class="form-wrap">
+    <h2>新增商品</h2>
+    <form method="POST" action="../api/add_product.php">
+      <div class="field">
+        <label for="name">商品名稱</label>
+        <input id="name" name="name" type="text" required>
+      </div>
+      <div class="field">
+        <label for="price">價格</label>
+        <input id="price" name="price" type="number" min="0" required>
+      </div>
+      <div class="field">
+        <label for="img">圖片路徑</label>
+        <input id="img" name="img" type="text" placeholder="../uploads/goods1.png" required>
+      </div>
+      <div class="actions">
+        <button type="submit">送出</button>
+      </div>
+      <p class="hint">送出後會看到 JSON 回應，表示寫入成功。</p>
+    </form>
+  </div>
+</body>
+
+</html>

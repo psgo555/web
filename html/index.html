@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- 三大標籤,提升網頁搜索排名 -->
+  <!-- meta:desc -->
+  <meta name="description" content="小兔鮮官網,致力於打造全球最大的食品、生鮮電商購物平台。">
+  <!-- meta:kw -->
+  <meta name="keywords" content="小兔鮮,食品,生鮮,服裝,家電,電商,購物">
+  <title>小兔鮮-新鮮、惠民、快捷!</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+  <!-- 快捷導航 -->
+  <div class="shortcut">
+    <div class="wrapper">
+      <ul>
+        <li><a href="#" class="login">請先登陸</a></li>
+        <li><a href="#">免費註冊</a></li>
+        <li><a href="#">我的訂單</a></li>
+        <li><a href="#">會員中心</a></li>
+        <li><a href="#">幫助中心</a></li>
+        <li><a href="#">在線客服</a></li>
+        <li><a href="#"><i class="fa fa-mobile" aria-hidden="true"></i>手機版</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 頭部 -->
+  <div class="header wrapper">
+    <!-- logo -->
+    <div class="logo">
+      <h1><a href="#">小兔鮮</a></h1>
+    </div>
+    <!-- 導航 -->
+    <div class="nav">
+      <ul>
+        <li><a href="#">首頁</a></li>
+        <li><a href="#">生鮮</a></li>
+        <li><a href="#">美食</a></li>
+        <li><a href="#">餐廚</a></li>
+        <li><a href="#">電器</a></li>
+        <li><a href="#">居家</a></li>
+        <li><a href="#">洗護</a></li>
+        <li><a href="#">孕嬰</a></li>
+        <li><a href="#">服裝</a></li>
+      </ul>
+    </div>
+    <!-- 搜尋 -->
+    <div class="search">
+      <i class="fa fa-search" aria-hidden="true"></i>
+      <input type="text" placeholder="搜一搜">
+      <!-- 建立可輸入文字的輸入框 -->
+    </div>
+    <!-- 購物車 -->
+    <a href="./cart.html" class="cart" target="_blank" rel="noopener">
+      <!-- rel="noopener":避免新分頁影響原分頁。 -->
+      <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+      <!-- 購物車數量 -->
+      <span>0</span>
+    </a>
+  </div>
+
+  <!-- banner -->
+  <div class="banner">
+    <div class="wrapper">
+      <!-- 輪播圖 -->
+      <ul class="pic1">
+        <li><a href="#"><img src="../uploads/banner1.png" alt=""></a></li>
+        <li><a href="#"><img src="../uploads/banner2.png" alt=""></a></li>
+        <li><a href="#"><img src="../uploads/banner3.png" alt=""></a></li>
+      </ul>
+      <!-- 側導航ul -->
+      <div class="submarine">
+        <ul>
+          <li>
+            <div><a href="#" class="classify">生鮮</a><a href="#">水果</a><a href="#">蔬菜</a></div>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </li>
+          <li>
+            <div><a href="#" class="classify">美食</a><a href="#">麵包</a><a href="#">水果</a></div>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </li>
+          <li>
+            <div><a href="#" class="classify">餐廚</a><a href="#">數碼產品</a></div>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </li>
+          <li>
+            <div><a href="#" class="classify">電器</a><a href="#">床品</a><a href="#">四件套</a><a href="#">被枕</a></div>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </li>
+          <li>
+            <div><a href="#" class="classify">居家</a><a href="#">奶粉</a><a href="#">玩具</a><a href="#">輔食</a></div>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </li>
+          <li>
+            <div><a href="#" class="classify">洗護</a><a href="#">洗髮</a><a href="#">洗護</a><a href="#">美妝</a></div>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </li>
+          <li>
+            <div><a href="#" class="classify">孕嬰</a><a href="#">奶粉</a><a href="#"></a><a href="#">玩具</a></div>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </li>
+          <li>
+            <div><a href="#" class="classify">服飾</a><a href="#">男裝</a><a href="#">女裝</a></div>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </li>
+          <li>
+            <div><a href="#" class="classify">雜貨</a><a href="#">戶外</a><a href="#">圖書</a></div>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </li>
+          <li>
+            <div><a href="#" class="classify">品牌</a><a href="#">品牌製造</a></div>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </li>
+
+        </ul>
+      </div>
+      <!-- 圓點指示器 -->
+      <ol>
+        <li class="current"><i></i></li>
+        <li><i></i></li>
+        <li><i></i></li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- 大家都在搜 -->
+  <div class="goods wrapper">
+    <!-- 標題 -->
+    <div class="title">
+      <!-- 左邊 -->
+      <div class="left">
+        <h3>大家都在搜</h3>
+        <p>熱門商品 品質靠譜</p>
+      </div>
+      <!-- 右邊 -->
+      <div class="right">
+        <a href="#" class="more">查看全部
+          <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+      </div>
+    </div>
+    <!-- 內容 -->
+    <div class="bd">
+      <ul>
+        <!-- js讀取商品 -->
+        <li data-id="goods1" data-name="【全新現貨】NEO60 CORE 客製化鍵盤套件" data-price="3820" data-img="../uploads/goods1.png">
+          <a href="#">
+            <div class="pic"><img src="../uploads/goods1.png" alt="">
+              <!-- 加入購物車 -->
+              <button class="add-to-cart">加入購物車</button>
+            </div>
+            <div class="txt">
+              <h4>【全新現貨】NEO60 CORE 客製化鍵盤套件</h4>
+              <p>$<span>3820</span></p>
+            </div>
+          </a>
+        </li>
+
+        <li data-id="goods2" data-name="海賊王巨人島壁畫喬伊波伊尼卡果實組合反光車貼 防水裝飾貼" data-price="45" data-img="../uploads/goods2.png">
+          <a href="#">
+            <div class="pic"><img src="../uploads/goods2.png" alt="">
+              <!-- 加入購物車 -->
+              <button class="add-to-cart">加入購物車</button>
+            </div>
+            <div class="txt">
+              <h4>海賊王巨人島壁畫喬伊波伊尼卡果實組合反光車貼 防水裝飾貼</h4>
+              <p>$<span>45</span></p>
+            </div>
+          </a>
+        </li>
+        <li data-id="goods3" data-name="【toys模模噠】KS 全職獵人 第四十一彈 席巴 揍敵客 雕像手辦gk" data-price="299"
+          data-img="../uploads/goods3.png">
+          <a href="#">
+            <div class="pic"><img src="../uploads/goods3.png" alt="">
+              <!-- 加入購物車 -->
+              <button class="add-to-cart">加入購物車</button>
+            </div>
+            <div class="txt">
+              <h4>【toys模模噠】KS 全職獵人 第四十一彈 席巴 揍敵客 雕像手辦gk</h4>
+              <p>$<span>299</span></p>
+            </div>
+          </a>
+        </li>
+        <li data-id="goods4" data-name="【萬事屋手辦模型powermax 海賊航海王 百獸凱多 大媽 電話蟲" data-price="576"
+          data-img="../uploads/goods4.png">
+          <a href="#">
+            <div class="pic"><img src="../uploads/goods4.png" alt="">
+              <!-- 加入購物車 -->
+              <button class="add-to-cart">加入購物車</button>
+            </div>
+            <div class="txt">
+              <h4>【萬事屋公仔模型powermax】海賊航海王 百獸凱多 大媽 電話蟲</h4>
+              <p>$<span>576</span></p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 人氣推薦 -->
+  <div class="recommend wrapper">
+    <!-- 標題 -->
+    <div class="title">
+      <!-- 左邊 -->
+      <div class="left">
+        <h3>人氣推薦</h3>
+        <p>人氣爆款 不容錯過</p>
+      </div>
+    </div>
+    <!-- 內容 -->
+    <div class="bd">
+      <ul>
+        <li>
+          <a href="#">
+            <div class="pic"><img src="../uploads/goods5.png" alt=""></div>
+            <div class="txt">
+              <h4>特惠推薦</h4>
+              <p>我猜得到 你的需要</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="pic"><img src="../uploads/goods7.png" alt=""></div>
+            <div class="txt">
+              <h4>爆款推薦</h4>
+              <p>人氣好物推薦</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="pic"><img src="../uploads/goods6.png" alt=""></div>
+            <div class="txt">
+              <h4>節日禮品一站買全</h4>
+              <p>編輯盡心整理推薦</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="pic"><img src="../uploads/goods8.png" alt=""></div>
+            <div class="txt">
+              <h4>鮮花園藝</h4>
+              <p>給生活增加儀式感</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 熱門品牌 -->
+  <div class="brand">
+    <div class="wrapper">
+      <!-- 標題 -->
+      <div class="title">
+        <div class="left">
+          <h3>熱門品牌</h3>
+          <p>人氣爆款 不容錯過</p>
+        </div>
+
+        <div class="button">
+          <a href="#" class="prev">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+          </a>
+          <a href="#" class="next">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+      <!-- 內容 -->
+      <div class="bd">
+        <ul>
+          <li>
+            <a href="#">
+              <div class="pic"><img src="../uploads/hot1.jpg" alt=""></div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="pic"><img src="../uploads/hot2.jpg" alt=""></div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="pic"><img src="../uploads/hot3.jpg" alt=""></div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="pic"><img src="../uploads/hot4.jpg" alt=""></div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="pic"><img src="../uploads/hot5.jpg" alt=""></div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="pic"><img src="../uploads/hot6.png" alt=""></div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="pic"><img src="../uploads/hot7.png" alt=""></div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="pic"><img src="../uploads/hot8.png" alt=""></div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="pic"><img src="../uploads/hot9.png" alt=""></div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="pic"><img src="../uploads/hot10.png" alt=""></div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 美食 -->
+  <div class="fresh wrapper">
+    <!-- 標題 -->
+    <div class="title">
+      <div class="left">
+        <h3>美食</h3>
+      </div>
+      <div class="right">
+        <ul>
+          <li><a href="#" class="active">熱門</a></li>
+          <li><a href="#">甜點</a></li>
+          <li><a href="#">下午茶</a></li>
+          <li><a href="#">蛋糕</a></li>
+          <li><a href="#">麵包</a></li>
+          <li><a href="#">零食</a></li>
+          <li><a href="#">飲料</a></li>
+        </ul>
+        <a href="#" class="more">查看全部
+          <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+      </div>
+    </div>
+
+    <!-- 內容 -->
+    <div class="content">
+      <div class="left">
+        <a href="#"><img src="../uploads/生鮮左邊.png" alt=""></a>
+      </div>
+      <div class="right">
+        <ul>
+          <li>
+            <a href="#">
+              <div class="pic"><img src="../uploads/生鮮6.png" alt=""></div>
+              <div class="txt">
+                <div class="info">
+                  <h4>知味觀條頭糕杭州特產糯米糕團點心好吃糯糯嘰嘰的零食品麻薯小吃</h4>
+                </div>
+                <p class="price">$<span>40</span></p>
+              </div>
+            </a>
+            <div class="cover">
+              <p>找相似</p>
+              <p></p>
+              <p>發現更多寶貝<i class="fa fa-angle-right" aria-hidden="true"></i> </p>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <div class="pic"><img src="../uploads/生鮮4.png" alt=""></div>
+              <div class="txt">
+                <div class="info">
+                  <h4>黑森林蛋糕椰蓉新鮮慕斯甜點下午茶千層老式巧克力點</h4>
+                </div>
+                <p class="price">$<span>68</span></p>
+              </div>
+            </a>
+            <div class="cover">
+              <p>找相似</p>
+              <p></p>
+              <p>發現更多寶貝<i class="fa fa-angle-right" aria-hidden="true"></i> </p>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <div class="pic"><img src="../uploads/生鮮8.png" alt=""></div>
+              <div class="txt">
+                <div class="info">
+                  <h4>德式-黑森林蘭姆酒蛋糕 (500g )</h4>
+                </div>
+                <p class="price">$<span>360</span></p>
+              </div>
+            </a>
+            <div class="cover">
+              <p>找相似</p>
+              <p></p>
+              <p>發現更多寶貝<i class="fa fa-angle-right" aria-hidden="true"></i> </p>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <div class="pic"><img src="../uploads/生鮮2.png" alt=""></div>
+              <div class="txt">
+                <div class="info">
+                  <h4>朵娜貝拉比利時進口巧克力送女友男孩兒童生日零食禮盒聖誕禮物</h4>
+                </div>
+                <p class="price">$<span>720</span></p>
+              </div>
+            </a>
+            <div class="cover">
+              <p>找相似</p>
+              <p></p>
+              <p>發現更多寶貝<i class="fa fa-angle-right" aria-hidden="true"></i> </p>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <div class="pic"><img src="../uploads/生鮮3.png" alt=""></div>
+              <div class="txt">
+                <div class="info">
+                  <h4>宮廷桃酥餅乾小袋整箱零食早餐小吃傳統老式手工糕點心休閒食品</h4>
+                </div>
+                <p class="price">$<span>45</span></p>
+              </div>
+            </a>
+            <div class="cover">
+              <p>找相似</p>
+              <p></p>
+              <p>發現更多寶貝<i class="fa fa-angle-right" aria-hidden="true"></i> </p>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <div class="pic"><img src="../uploads/生鮮7.png" alt=""></div>
+              <div class="txt">
+                <div class="info">
+                  <h4>盼盼純蛋糕雞蛋糕心早餐營養麵包糕點飽足零食宵夜小吃下午茶整箱</h4>
+                </div>
+                <p class="price">$<span>110</span></p>
+              </div>
+            </a>
+            <div class="cover">
+              <p>找相似</p>
+              <p></p>
+              <p>發現更多寶貝<i class="fa fa-angle-right" aria-hidden="true"></i> </p>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <div class="pic"><img src="../uploads/生鮮5.png" alt=""></div>
+              <div class="txt">
+                <div class="info">
+                  <h4>香蔥牛軋糖餅乾 牛扎餅乾夾心蔥軋餅小吃古手工網紅休閒小點心</h4>
+                </div>
+                <p class="price">$<span>55</span></p>
+              </div>
+            </a>
+            <div class="cover">
+              <p>找相似</p>
+              <p></p>
+              <p>發現更多寶貝<i class="fa fa-angle-right" aria-hidden="true"></i> </p>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <div class="pic"><img src="../uploads/生鮮1.png" alt=""></div>
+              <div class="txt">
+                <div class="info">
+                  <h4>kakaye卡卡業生日蛋糕全麥胚提拉米蘇慕斯奶油抹茶起司甜點健康</h4>
+                </div>
+                <p class="price">$<span>360</span></p>
+              </div>
+            </a>
+            <div class="cover">
+              <p>找相似</p>
+              <p></p>
+              <p>發現更多寶貝<i class="fa fa-angle-right" aria-hidden="true"></i> </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- 服飾 -->
+  <div class="fresh wrapper">
+    <!-- 標題 -->
+    <div class="title">
+      <div class="left">
+        <h3>服飾</h3>
+      </div>
+      <div class="right">
+        <ul>
+          <li><a href="#" class="active">熱門</a></li>
+          <li><a href="#">流行女裝</a></li>
+          <li><a href="#">潮流女包</a></li>
+          <li><a href="#">配飾</a></li>
+          <li><a href="#">內衣</a></li>
+          <li><a href="#">流行男裝</a></li>
+          <li><a href="#">男士男包</a></li>
+        </ul>
+        <a href="#" class="more">查看全部
+          <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+      </div>
+    </div>
+
+    <!-- 內容 -->
+    <div class="content">
+      <div class="left">
+        <a href="#"><img src="../uploads/服飾左邊.jpg" alt=""></a>
+      </div>
+      <div class="right">
+        <ul>
+          <li>
+            <a href="#">
+              <div class="pic"><img src="../uploads/服飾1.png" alt=""></div>
+              <div class="txt">
+                <div class="info">
+                  <h4>【2025夏季新款爆款】</h4>
+                  <p>純棉黑色短袖T恤設計感小眾上衣寬鬆大尺碼T恤</p>
+                </div>
+                <p class="price">$<span>263</span></p>
+              </div>
+            </a>
+            <div class="cover">
+              <p>找相似</p>
+              <p></p>
+              <p>發現更多寶貝<i class="fa fa-angle-right" aria-hidden="true"></i> </p>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <div class="pic"><img src="../uploads/服飾2.jpg" alt=""></div>
+              <div class="txt">
+                <div class="info">
+                  <h4>【2024秋季新款】</h4>
+                  <p>時尚裝飾釦子純色收腰修身顯瘦洋氣長袖打底衫上衣</p>
+                </div>
+                <p class="price">$<span>870</span></p>
+              </div>
+            </a>
+            <div class="cover">
+              <p>找相似</p>
+              <p></p>
+              <p>發現更多寶貝<i class="fa fa-angle-right" aria-hidden="true"></i> </p>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <div class="pic"><img src="../uploads/服飾3.jpg" alt=""></div>
+              <div class="txt">
+                <div class="info">
+                  <h4>【2025秋冬男打底衫】</h4>
+                  <p>MrBu布先生立體燙鑽繡花圓領長袖T恤</p>
+                </div>
+                <p class="price">$<span>540</span></p>
+              </div>
+            </a>
+            <div class="cover">
+              <p>找相似</p>
+              <p></p>
+              <p>發現更多寶貝<i class="fa fa-angle-right" aria-hidden="true"></i> </p>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <div class="pic"><img src="../uploads/服飾4.jpg" alt=""></div>
+              <div class="txt">
+                <div class="info">
+                  <h4>MrBu布先生時尚百搭寬鬆圓領衛衣秋冬純色親膚長袖內搭男斷碼</h4>
+                </div>
+                <p class="price">$<span>540</span></p>
+              </div>
+            </a>
+            <div class="cover">
+              <p>找相似</p>
+              <p></p>
+              <p>發現更多寶貝<i class="fa fa-angle-right" aria-hidden="true"></i> </p>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <div class="pic"><img src="../uploads/服飾5.jpg" alt=""></div>
+              <div class="txt">
+                <div class="info">
+                  <h4>【2025年新爆款耳環女】</h4>
+                  <p>純銀耳環環輕奢小眾設計生日禮物送女友老婆</p>
+                </div>
+                <p class="price">$<span>50</span></p>
+              </div>
+            </a>
+            <div class="cover">
+              <p>找相似</p>
+              <p></p>
+              <p>發現更多寶貝<i class="fa fa-angle-right" aria-hidden="true"></i> </p>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <div class="pic"><img src="../uploads/服飾6.jpg" alt=""></div>
+              <div class="txt">
+                <div class="info">
+                  <h4>【王嘉爾同款鏈條】</h4>
+                  <p>男小眾設計高級感嘻哈潮流衛衣鏈毛衣鏈男潮配件</p>
+                </div>
+                <p class="price">$<span>79</span></p>
+              </div>
+            </a>
+            <div class="cover">
+              <p>找相似</p>
+              <p></p>
+              <p>發現更多寶貝<i class="fa fa-angle-right" aria-hidden="true"></i> </p>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <div class="pic"><img src="../uploads/服飾7.jpg" alt=""></div>
+              <div class="txt">
+                <div class="info">
+                  <h4>【歐美古巴鍊子項鍊】</h4>
+                  <p>hiphop男女潮流嘻哈誇張鈦鋼不掉色高街粗款</p>
+                </div>
+                <p class="price">$<span>58</span></p>
+              </div>
+            </a>
+            <div class="cover">
+              <p>找相似</p>
+              <p></p>
+              <p>發現更多寶貝<i class="fa fa-angle-right" aria-hidden="true"></i> </p>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <div class="pic"><img src="../uploads/服飾8.jpg" alt=""></div>
+              <div class="txt">
+                <div class="info">
+                  <h4>【新款輕奢高級感小方包】</h4>
+                  <p>COOGI品牌包包女單肩斜背包通勤手提包</p>
+                </div>
+                <p class="price">$<span>3820</span></p>
+              </div>
+            </a>
+            <div class="cover">
+              <p>找相似</p>
+              <p></p>
+              <p>發現更多寶貝<i class="fa fa-angle-right" aria-hidden="true"></i> </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- 居家 -->
+  <div class="fresh wrapper">
+    <!-- 標題 -->
+    <div class="title">
+      <div class="left">
+        <h3>居家</h3>
+      </div>
+      <div class="right">
+        <ul>
+          <li><a href="#" class="active">熱門</a></li>
+          <li><a href="#">全屋傢俱</a></li>
+          <li><a href="#">建築材料</a></li>
+          <li><a href="#">廚房衛浴</a></li>
+          <li><a href="#">五金電工</a></li>
+          <li><a href="#">生活日用</a></li>
+          <li><a href="#">裝修設計</a></li>
+        </ul>
+        <a href="#" class="more">查看全部
+          <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+      </div>
+    </div>
+
+    <!-- 內容 -->
+    <div class="content">
+      <div class="left">
+        <a href="#"><img src="../uploads/居家左邊.png" alt=""></a>
+      </div>
+      <div class="right">
+        <ul>
+          <li>
+            <a href="#">
+              <div class="pic"><img src="../uploads/居家1.png" alt=""></div>
+              <div class="txt">
+                <div class="info">
+                  <h4>伸縮吧台桌家用移動小吧台櫃酒櫃餐邊櫃餐桌一體客廳隔間櫃咖啡櫃</h4>
+                </div>
+                <p class="price">$<span>17700</span></p>
+              </div>
+            </a>
+            <div class="cover">
+              <p>找相似</p>
+              <p></p>
+              <p>發現更多寶貝<i class="fa fa-angle-right" aria-hidden="true"></i> </p>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <div class="pic"><img src="../uploads/居家2.png" alt=""></div>
+              <div class="txt">
+                <div class="info">
+                  <h4>沙發豆腐塊皮沙發義式極簡大平層橫廳設計師沙發</h4>
+                </div>
+                <p class="price">$<span>13900</span></p>
+              </div>
+            </a>
+            <div class="cover">
+              <p>找相似</p>
+              <p></p>
+              <p>發現更多寶貝<i class="fa fa-angle-right" aria-hidden="true"></i> </p>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <div class="pic"><img src="../uploads/居家3.png" alt=""></div>
+              <div class="txt">
+                <div class="info">
+                  <h4>熊貓背影抱枕玩偶可愛奶油風沙發客廳床頭飄窗靠背靠枕辦公室靠墊</h4>
+                </div>
+                <p class="price">$<span>3770</span></p>
+              </div>
+            </a>
+            <div class="cover">
+              <p>找相似</p>
+              <p></p>
+              <p>發現更多寶貝<i class="fa fa-angle-right" aria-hidden="true"></i> </p>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <div class="pic"><img src="../uploads/居家4.png" alt=""></div>
+              <div class="txt">
+                <div class="info">
+                  <h4>日式侘寂風實木創意客廳臥室書房設計師民宿裝飾氛圍感檯燈</h4>
+                </div>
+                <p class="price">$<span>990</span></p>
+              </div>
+            </a>
+            <div class="cover">
+              <p>找相似</p>
+              <p></p>
+              <p>發現更多寶貝<i class="fa fa-angle-right" aria-hidden="true"></i> </p>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <div class="pic"><img src="../uploads/居家5.png" alt=""></div>
+              <div class="txt">
+                <div class="info">
+                  <h4>義大利ALESSI山卓開瓶器輕奢多功能紅酒開瓶器禮品</h4>
+                </div>
+                <p class="price">$<span>499</span></p>
+              </div>
+            </a>
+            <div class="cover">
+              <p>找相似</p>
+              <p></p>
+              <p>發現更多寶貝<i class="fa fa-angle-right" aria-hidden="true"></i> </p>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <div class="pic"><img src="../uploads/居家6.png" alt=""></div>
+              <div class="txt">
+                <div class="info">
+                  <h4>三思工房雷神之鎚開瓶器個性家用啤酒起子創意家居擺件黑胡桃木</h4>
+                </div>
+                <p class="price">$<span>529</span></p>
+              </div>
+            </a>
+            <div class="cover">
+              <p>找相似</p>
+              <p></p>
+              <p>發現更多寶貝<i class="fa fa-angle-right" aria-hidden="true"></i> </p>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <div class="pic"><img src="../uploads/居家7.png" alt=""></div>
+              <div class="txt">
+                <div class="info">
+                  <h4>極簡時來運轉喬遷新居禮物創意桌面擺飾辦公室客廳電視櫃軟裝飾品</h4>
+                </div>
+                <p class="price">$<span>283</span></p>
+              </div>
+            </a>
+            <div class="cover">
+              <p>找相似</p>
+              <p></p>
+              <p>發現更多寶貝<i class="fa fa-angle-right" aria-hidden="true"></i> </p>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <div class="pic"><img src="../uploads/居家8.png" alt=""></div>
+              <div class="txt">
+                <div class="info">
+                  <h4>【實木防塵展示櫃桌面收納盒透明玻璃擺飾櫃首飾收納格櫃小茶具櫃</h4>
+                </div>
+                <p class="price">$<span>3820</span></p>
+              </div>
+            </a>
+            <div class="cover">
+              <p>找相似</p>
+              <p></p>
+              <p>發現更多寶貝<i class="fa fa-angle-right" aria-hidden="true"></i> </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- 最新專題 -->
+  <div class="topic wrapper">
+    <!-- 標題 -->
+    <div class="title">
+      <div class="left">
+        <h3>最新專題</h3>
+      </div>
+      <div class="right">
+        <a href="#" class="more">查看全部
+          <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+      </div>
+    </div>
+    <!-- 內容 -->
+    <div class="topic-bd">
+      <ul>
+        <li>
+          <a href="#">
+            <div class="pic"><img src="../uploads/topic1.png" alt=""></div>
+            <div class="txt">
+              <div class="left">
+                <p><i class="fa fa-heart" aria-hidden="true"></i><span>1200</span></p>
+                <p><i class="fa fa-eye" aria-hidden="true"></i><span>1800</span></p>
+              </div>
+              <div class="right">
+                <p><i class="fa fa-comment-o" aria-hidden="true"></i><span>246</span></p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li><a href="#">
+            <div class="pic"><img src="../uploads/topic2.jpg" alt=""></div>
+            <div class="txt">
+              <div class="left">
+                <p><i class="fa fa-heart" aria-hidden="true"></i><span>1129</span></p>
+                <p><i class="fa fa-eye" aria-hidden="true"></i><span>182</span></p>
+              </div>
+              <div class="right">
+                <p><i class="fa fa-comment-o" aria-hidden="true"></i><span>39</span></p>
+              </div>
+            </div>
+          </a></li>
+        <li><a href="#">
+            <div class="pic"><img src="../uploads/topic3.jpg" alt=""></div>
+            <div class="txt">
+              <div class="left">
+                <p><i class="fa fa-heart" aria-hidden="true"></i><span>2901</span></p>
+                <p><i class="fa fa-eye" aria-hidden="true"></i><span>1628</span></p>
+              </div>
+              <div class="right">
+                <p><i class="fa fa-comment-o" aria-hidden="true"></i><span>122</span></p>
+              </div>
+            </div>
+          </a></li>
+      </ul>
+    </div>
+
+    <!-- 底部 -->
+    <div class="footer">
+      <div class="wrapper">
+        <!-- 服務 -->
+        <div class="servise">
+          <ul>
+            <li>
+              <h5></h5>
+              <p>價格親民</p>
+            </li>
+            <li>
+              <h5></h5>
+              <p>物流快速</p>
+            </li>
+            <li>
+              <h5></h5>
+              <p>品質新鮮</p>
+            </li>
+            <li>
+              <h5></h5>
+              <p>售後無憂</p>
+            </li>
+
+          </ul>
+        </div>
+        <!-- 幫助中心 -->
+        <div class="help">
+          <div class="left">
+            <dl>
+              <dt>購物指南</dt>
+              <dd><a href="#">購物流程</a></dd>
+              <dd><a href="#">支付方式</a></dd>
+              <dd><a href="#">售後規則</a></dd>
+            </dl>
+            <dl>
+              <dt>配送方式</dt>
+              <dd><a href="#">配送運費</a></dd>
+              <dd><a href="#">配送範圍</a></dd>
+              <dd><a href="#">配送時間</a></dd>
+            </dl>
+            <dl>
+              <dt>關於我們</dt>
+              <dd><a href="#">平台規則</a></dd>
+              <dd><a href="#">聯絡我們</a></dd>
+              <dd><a href="#">問題回饋</a></dd>
+            </dl>
+            <dl>
+              <dt>售後服務</dt>
+              <dd><a href="#">售後政策</a></dd>
+              <dd><a href="#">退款說明</a></dd>
+              <dd><a href="#">取消訂單</a></dd>
+            </dl>
+            <dl>
+              <dt>服務熱線</dt>
+              <dd><a href="#">在線客服 <i class="fa fa-headphones" aria-hidden="true"></i>
+                </a></dd>
+              <dd><a href="#">客服電話 0800-092-000</a></dd>
+              <dd><a href="#">工作時間 週一至週日8:00-17:00</a></dd>
+            </dl>
+          </div>
+          <div class="right">
+            <ul>
+              <li>
+                <div class="pic"><img src="../img/qrcode.png" alt=""></div>
+                <p>官方LINE</p>
+              </li>
+              <li>
+                <div class="dwpic"><img src="../img/dw qrcode.png" alt=""></div>
+                <p>APP下載QRCODE</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 版權 -->
+        <div class="copyright">
+          <p>
+            <a href="#">關於我們</a>|
+            <a href="#">幫助中心</a>|
+            <a href="#">售後服務</a>|
+            <a href="#">配送與驗收</a>|
+            <a href="#">商務合作</a>|
+            <a href="#">搜尋推薦</a>|
+            <a href="#">友情連結</a>
+          </p>
+          <p>CopyRight © 小兔鮮</p>
+        </div>
+      </div>
+    </div>
+    <!-- 置頂按鈕 -->
+    <button class="back-to-top" aria-label="回到頂部">
+      <i class="fa fa-angle-up" aria-hidden="true"></i>
+    </button>
+    <!-- <script src="../JavaScript/index.js"></script> -->
+
+    <!-- 輪播圖js -->
+    <script src="../JavaScript/slides.js"></script>
+    <!-- 商品資料 -->
+    <script src="../JavaScript/products.js"></script>
+    <!-- 點擊按鈕 購物車更新 -->
+    <script src="../JavaScript/getcart.js"></script>
+    <!-- 置頂按鈕 -->
+    <script src="../JavaScript/BackToTop.js"></script>
+</body>
+
+</html>

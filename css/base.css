@@ -1,0 +1,20 @@
+/* 基礎公共樣式:清除默認樣式+設置通用樣式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}

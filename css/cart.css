@@ -1,0 +1,202 @@
+    /* 購物車頁面外層容器間距 */
+    .cart-page {
+      padding: 40px 0;
+    }
+
+    /* 避免內容過少時頁面高度塌陷 */
+    .cart-page .wrapper {
+      min-height: 400px;
+    }
+
+    /* 清單容器 */
+    .cart-list {
+      border: 1px solid #eee;
+      background-color: #fff;
+    }
+
+    /* 列式版面(標題跟項目)*/
+    .cart-row {
+      display: grid;
+      grid-template-columns: 1.8fr 0.8fr 1fr 0.8fr 0.6fr;
+      align-items: center;
+      gap: 12px;
+      padding: 16px 20px;
+      border-top: 1px solid #f2f2f2;
+    }
+
+    /* 表頭列樣式 */
+    .cart-header {
+      font-weight: 600;
+      background-color: #f7f7f7;
+      border-top: 0;
+    }
+
+    /* 空購物車提示 */
+    .cart-row.cart-empty {
+      grid-template-columns: 1fr;
+      text-align: center;
+      color: #999;
+    }
+
+    /* 商品清單 */
+    .cart-product {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    /* 商品縮圖 */
+    .cart-product img {
+      width: 64px;
+      height: 64px;
+      object-fit: cover;
+      border-radius: 6px;
+      display: block;
+    }
+
+    /* 價格跟總價 */
+    .cart-price,
+    .cart-subtotal {
+      color: #e26237;
+      font-weight: 600;
+    }
+
+    /* 數量控制 */
+    .cart-qty {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* 數量按鈕 */
+    .cart-qty button {
+      width: 28px;
+      height: 28px;
+      border: 1px solid #ddd;
+      background-color: #fff;
+      cursor: pointer;
+    }
+
+    /* 移除按鈕 */
+    .cart-remove {
+      padding: 6px 10px;
+      border: 1px solid #ddd;
+      background-color: #fff;
+      cursor: pointer;
+    }
+
+    /* 頁尾(總計+結帳 */
+    .cart-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+      padding: 16px 20px;
+      border: 1px solid #eee;
+      background-color: #fff;
+    }
+
+    /* 總額 */
+    .cart-total {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    /* 確認按鈕 */
+    .cart-checkout {
+      padding: 10px 18px;
+      border: 0;
+      background-color: #00be9a;
+      color: #fff;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    /* 清空購物車按鈕 */
+    .cart-clear {
+      padding: 5px 9px;
+      border: 0;
+      background-color: #f54242;
+      color: #fff;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    /* 付款方式 */
+    .pay-section {
+      margin-bottom: 16px;
+    }
+
+    .pay-section h4 {
+      margin-bottom: 8px;
+      font-size: 16px;
+      color: #333;  
+      text-align: center;
+    }
+
+    /* ul */
+    .pay-list {
+      display: flex;
+      /* 自動換行 */
+      flex-wrap: wrap;
+      /* 項目間距 */
+      gap: 10px;
+      justify-content: center;
+
+    }
+
+    .pay-list li {
+      width: 80px;
+      height: 48px;
+      border-bottom: 1px solid #e6e6e6;
+      border-radius: 6px;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .pay-list img {
+      max-width: 70px;
+      max-height: 38px;
+      display: block;
+      object-fit: contain;
+    }
+
+    /* 物流 */
+    .ship-section {
+      margin-top: 20px;
+      margin-bottom: 16px;
+    }
+
+    .ship-section h4 {
+      margin-bottom: 8px;
+      font-size: 16px;
+      color: #333;
+      text-align: center;
+    }
+
+    .ship-list img {
+      max-width: 70px;
+      max-height: 38px;
+      display: block;
+      object-fit: contain;
+    }
+
+    .ship-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .ship-list li {
+      min-width: 88px;
+      padding: 6px 10px;
+      border: 1px solid #e6e6e6;
+      border-radius: 6px;
+      background: #fff;
+      text-align: center;
+      font-weight: 600;
+      color: #3b3b3b;
+    }

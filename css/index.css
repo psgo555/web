@@ -1,0 +1,622 @@
+﻿/* 首頁內容樣式 */
+/* 頂部固定 */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: #fff;
+  margin-top: 0;
+}
+
+body {
+  padding-top: 88px;
+}
+
+/* banner */
+.banner {
+  height: 500px;
+  background-color: #f5f5f5;
+}
+
+.banner .wrapper {
+  position: relative;
+  height: 500px;
+  display: flex;
+  overflow: hidden;
+  /* 找到版心添加溢出隱藏 */
+}
+
+/* 圖片區域 */
+.banner .pic1 {
+  position: relative;
+  height: 100%;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* 讓 JS 控制每一張圖 */
+.banner .pic1 li {
+  display: none;
+  position: absolute;
+  inset: 0;
+}
+
+.banner .pic1 li a,
+.banner .pic1 li img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.banner .pic1 li img {
+  object-fit: cover;
+  object-position: center;  /* 裁切時對齊哪個位置 */
+  transform: scale(1.12);
+  transform-origin: center;
+}
+
+/* banner2、banner3 稍微縮小並往下 */
+.banner .pic1 li:nth-child(2) img,
+.banner .pic1 li:nth-child(3) img {
+  transform: scale(1.12);
+  transform-origin: center;
+}
+
+/* 側導航 */
+.submarine {
+  width: 250px;
+  height: 500px;
+  background-color: #555;
+  position: static;
+  order: -1;
+  flex: 0 0 250px;
+}
+
+.submarine li {
+  display: flex;
+  justify-content: space-between;
+  /* 主軸對齊 */
+  padding-left: 30px;
+  padding-right: 12px;
+  height: 50px;
+  line-height: 50px;
+  /* background-color: pink; */
+  color: #fff;
+  cursor: pointer;
+  /* 滑鼠經過會變小手 */
+}
+
+.submarine li .fa-angle-right {
+  line-height: 50px;
+  font-size: 14px;
+}
+
+/* a所有都是小字,分類都是大字 */
+.submarine li a {
+  margin-right: 5px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.submarine li .classify {
+  margin-right: 14px;
+  font-size: 16px;
+}
+
+/* 鼠標懸停顏色 */
+.submarine li:hover {
+  background-color: #00be9a;
+}
+
+/* 圓點指示器 */
+.banner ol {
+  position: absolute;
+  display: flex;
+  bottom: 17px;
+  right: 16px;
+  z-index: 3;
+}
+
+/* 大圓 */
+.banner ol li {
+  width: 22px;
+  height: 22px;
+  /* background-color:skyblue; */
+  border-radius: 50%;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+/* 小圓 */
+.banner ol i {
+  /* 行內加寬高不生效 */
+  display: block;
+  width: 14px;
+  height: 14px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  margin: 4px;
+  /* 置中 */
+}
+
+/* 選中:li半透明;i白色 */
+.banner ol .current {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.banner ol .current i {
+  background-color: #fff;
+}
+
+/* 目前點選的圓點顏色 */
+.banner ol li.current {
+  background-color: #27ba9b;
+}
+
+/* 大家都在搜 */
+/* 標題 --公共樣式 */
+.title {
+  display: flex;
+  justify-content: space-between;
+  height: 42px;
+  /* background-color: pink; */
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+/* 左邊 */
+.title .left {
+  display: flex;
+}
+
+.title .left h3 {
+  margin-right: 35px;
+  font-size: 30px;
+}
+
+.title .left p {
+  align-self: flex-end;
+  /* 側軸對齊,讓p可以對齊底線 */
+  color: #a1a1a1;
+}
+
+/* 右邊 */
+.title .right .more {
+  color: #a1a1a1;
+  line-height: 42px;
+}
+
+.title .right .more .fa-angle-right {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+/* 好物內容 -- 公共樣式 */
+.bd ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bd li {
+  width: 304px;
+  height: 420px;
+  background-color: #eef9f4;
+}
+
+.bd li .pic {
+  width: 304px;
+  height: 304px;
+}
+
+.bd li .txt {
+  text-align: center;
+}
+
+.bd li h4 {
+  margin-top: 18px;
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+.goods .bd p {
+  font-size: 18px;
+  color: #aa2113;
+}
+
+.goods .bd p span {
+  font-size: 22px;
+  margin-left: 3px;
+}
+
+/* 滑鼠移到商品區顯示的外框 */
+.goods .bd li,
+.recommend .bd li,
+.brand .bd li {
+  border: 2px solid transparent;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.goods .bd li:hover,
+.recommend .bd li:hover,
+.brand .bd li:hover {
+  border-color: #00be9a
+}
+
+/* 購物車按鈕懸浮在圖片上 */
+.goods .bd .pic,
+.recommend .bd .pic,
+.brand .bd .pic {
+  position: relative;
+}
+
+.goods .bd .add-to-cart {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  padding: 6px 10px;
+  background: orange;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  display: none;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+/* 只有滑到按鈕本身才放大變色 */
+.goods .bd .add-to-cart:hover {
+  transform: scale(1.1);
+  background-color: #ff8c00;
+}
+
+.goods .bd li:hover .add-to-cart {
+  display: block;
+}
+
+/* 熱門品牌圖片區域（讓按鈕可以疊在圖片上） */
+.brand .bd .pic {
+  width: 100%;
+  height: 100%;
+}
+
+.brand .bd .pic img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* 滑鼠移到購物車時放大 */
+.cart {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.cart:hover {
+  background-color: #ffe7c2;
+  /* 淡橘 */
+  transform: scale(1.05);
+}
+
+
+/* 人氣推薦 */
+.recommend .bd li {
+  background-color: #fff;
+}
+
+.recommend .bd p {
+  font-size: 18px;
+  color: #a1a1a1;
+}
+
+.recommend .bd p span {
+  font-size: 22px;
+  margin-left: 3px;
+}
+
+/* 熱門品牌 */
+.brand {
+  margin-top: 60px;
+  height: 468px;
+  background-color: #f5f5f5;
+}
+
+.brand .wrapper {
+  overflow: hidden;
+  /* 因外邊距塌陷,在父級加入 */
+  height: 468px;
+  /* background-color: pink; */
+}
+
+.brand .title {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+/* 右邊箭頭區 */
+.brand .button {
+  position: absolute;
+  right: 0;
+  bottom: -25px;
+  /* 箭頭的大小是20px,與熱門品牌的上間距是5px,因取正數會將箭頭往上挪,故取負值 */
+
+  display: flex;
+  /* 讓a在一行顯示,父級變彈性盒子,子級寬高生效 */
+}
+
+.brand .button a {
+  margin-left: 12px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  color: #fff;
+  background-color: #ddd;
+}
+
+/* 可點擊的箭頭顯示綠色 */
+.brand .button a.is-active {
+  background-color: #00be9a;
+}
+
+/* 不可點擊的箭頭顯示灰色 */
+.brand .button a.is-disabled {
+  background-color: #ddd;
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.fa-angle-left,
+.fa-angle-right {
+  font-size: 20px;
+}
+
+/* 內容 */
+.brand .bd {
+  overflow: hidden;
+}
+
+.brand .bd ul {
+  display: flex;
+  justify-content: flex-start;
+  gap: 16px;
+  transition: transform 0.4s ease;
+  will-change: transform;
+}
+
+.brand .bd li {
+  width: 244px;
+  height: 306px;
+  flex: 0 0 244px;
+}
+
+.brand .bd li img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* 生鮮 */
+
+.fresh .title {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.title .right {
+  display: flex;
+}
+
+.title .right ul {
+  display: flex;
+  margin-top: 10px;
+  margin-right: 58px;
+}
+
+.title .right ul a {
+  display: block;
+  margin-left: 6px;
+  height: 20px;
+  /* background-color: pink; */
+  padding: 0 7px;
+  line-height: 20px;
+}
+
+.title .right ul .active {
+  background-color: #00be9a;
+  color: #fff;
+}
+
+/* 生鮮內容 */
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content .left {
+  width: 248px;
+  height: 610px;
+  /* background-color: pink; */
+}
+
+.content .left img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.content .right {
+  width: 968px;
+  height: 610px;
+  /* background-color: skyblue; */
+}
+
+.content .right ul {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex 子元素塞不下同一行時，可以自動「換行」 */
+}
+
+.content .right li {
+  position: relative;
+  /* 產品底部綠色區域,子絕父相 */
+  overflow: hidden;
+  /* 隱藏綠色區域 */
+  padding: 10px 21px 0;
+  width: 242px;
+  height: 305px;
+  border: 2px solid white;
+}
+
+/* 產品內容 */
+.content .pic {
+  width: 200px;
+  height: 180px;
+}
+
+.content .info {
+  margin-top: 14px;
+  margin-bottom: 5px;
+  height: 60px;
+  line-height: 19px;
+}
+
+.content .price {
+  color: #af2f22;
+}
+
+.content .price span {
+  font-size: 22px;
+  margin-left: 5px;
+}
+
+/* 產品底部綠色區域 */
+.content li .cover {
+  position: absolute;
+  left: 0;
+  bottom: -86px;
+  padding-top: 15px;
+  width: 242px;
+  height: 80px;
+  background-color: #00be9a;
+  text-align: center;
+  color: #fff;
+  transition: all 0.5s;
+  /* 動畫效果 */
+}
+
+.content .cover p:nth-child(1) {
+  font-size: 18px;
+}
+
+.content .cover p:nth-child(2) {
+  width: 120px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.11);
+  margin: 3px auto 6px;
+}
+
+.content .cover p:nth-child(3) {
+  font-size: 13px;
+}
+
+.content .cover p:nth-child(3) .fa-angle-right {
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+/* 當鼠標懸停到li,顯示cover */
+.content .right li:hover .cover {
+  bottom: 0;
+}
+
+.content .right li:hover {
+  border: 2px solid #00be9a;
+}
+
+/* 最新專題 */
+.topic {
+  margin-bottom: 40px;
+}
+
+.topic .title {
+  margin-top: 100px;
+}
+
+/* 內容 */
+.topic-bd ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.topic-bd li {
+  width: 405px;
+  height: 355px;
+  /* background-color: pink; */
+}
+
+.topic-bd .pic {
+  width: 405px;
+  height: 288px;
+}
+
+.topic-bd .pic img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.topic-bd .txt {
+  display: flex;
+  width: 405px;
+  height: 67px;
+  /* background-color: skyblue; */
+  padding: 0 15px;
+  justify-content: space-between;
+  align-items: center;
+  /* 彈性盒子:側軸居中 */
+  font-size: 14px;
+  color: #666;
+}
+
+.topic-bd .txt .left {
+  display: flex;
+}
+
+.topic-bd .txt .left p {
+  margin-right: 20px;
+}
+
+.topic-bd .txt .left .fa-heart {
+  color: #aa2113
+}
+
+/* 回到頂部按鈕 */
+.back-to-top {
+  position: fixed;
+  right: 8px;
+  bottom: 16px;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 50%;
+  background-color: #00be9a;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+  z-index: 1000;
+}
+
+.back-to-top:hover {
+  background-color: #00a786;
+}
